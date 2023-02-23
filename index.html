@@ -40,34 +40,45 @@
                 </div>
             </div>
 
-            <h2>IL TUO BIGLIETTO</h2>
+                <div id="ticketSlot" class="d-none">
+                    <h2>IL TUO BIGLIETTO</h2>
 
-            <div class="container ticketContainer">
-                <h3>DETTAGLIO PASSEGGERI</h3>
-                <div class="d-flex">
-                    <div class="nameContainer">
-                        <h3>NOME PASSEGGERO</h3>
-                        <div id="nameSlot">Jon Snow</div>
-                    </div>
+                    <div class="container ticketContainer">
 
-                    <div class="tableContainer">
-                        <table>
-                            <tr>
-                                <th>Offerta</th>
-                                <th>Carrozza</th>
-                                <th>Codice CP</th>
-                                <th>Costo biglietto</th>
-                            </tr>
-                            <tr>
-                                <td>Biglietto standard</td>
-                                <td>5</td>
-                                <td>92911</td>
-                                <td>2.10€</td>
-                            </tr>
-                        </table> 
+                        <div id="ticketError" class="d-none">
+                            <h3>Non sono stati compilati tutti i campi del form oppure alcuni dei dati inseriti potrebbero non essere considerati validi</h3>
+                        </div>
+
+                        <div id="ticketInfoSlot" class="d-none">
+                            <h3>DETTAGLIO PASSEGGERI</h3>
+                            <div class="d-flex">
+                                <div class="nameContainer">
+                                    <h3>NOME PASSEGGERO</h3>
+                                    <div id="nameSlot"></div>
+                                </div>
+
+                                <div class="tableContainer">
+                                    <table>
+                                        <tr>
+                                            <th>Offerta</th>
+                                            <th>Carrozza</th>
+                                            <th>Codice CP</th>
+                                            <th>Costo biglietto</th>
+                                        </tr>
+                                        <tr>
+                                            <td id="ticketDiscount"></td>
+                                            <td id="ticketCarriage"></td>
+                                            <td id="ticketCP"></td>
+                                            <td id="ticketPrice"></td>
+                                        </tr>
+                                    </table> 
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-            </div>
+
         </main>
 
         <script type="text/javascript" src="js/main.js"></script>
