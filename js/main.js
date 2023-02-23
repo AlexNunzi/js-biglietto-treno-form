@@ -34,6 +34,11 @@ startButton.addEventListener('click', function(){
             break;
     }
 
+    const trainCarriage = Math.floor((Math.random() * 10)) + 1; // numeri casuali da 1 a 10
+    const cpCode = Math.floor((Math.random() * 10000)) + 90000; // numeri casuali da 90000 a 99999
+
     console.log(`Il prezzo del biglietto è: ${userTravelPrice.toFixed(2)}€`);
     console.log(`La tariffa applicata è quella relativa a: ${ticketType}`);
+    console.log(`La carrozza assegnata è la numero: ${trainCarriage}`);
+    console.log(`Il codice CP assegnato è: ${cpCode}`)
 });
